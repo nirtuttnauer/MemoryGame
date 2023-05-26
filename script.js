@@ -75,3 +75,13 @@ function initializeBoard() {
 $(document).ready(function() {
   initializeBoard();
 });
+
+
+$(document).ready(function() {
+  // Event handler for navigation links
+  $("a").click(function(e) {
+    e.preventDefault();
+    var targetUrl = $(this).attr("href");
+    window.location.href = targetUrl;
+  });
+});
