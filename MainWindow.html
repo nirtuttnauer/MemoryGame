@@ -35,6 +35,22 @@
                 border: 1px solid #ccc;
             }
 
+            button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: #007bff;
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #0069d9;
+            }
+
             a {
                 display: block;
                 text-align: center;
@@ -52,10 +68,9 @@
     <body>
         <div id="joinDiv">
             <h1>Memory Game</h1>
-            <input type="text" placeholder="Enter your name...">
+            <input type="text" placeholder="Enter your name..." id="firstInput">
             <input type="text" placeholder="How many cards?">
-            <a href="mainWindow.html">Home</a>
-            <a href="index.html">Game</a>
+            <button type="button" id="startBtn">Start Game</button>
         </div>
     </body>
 </html>

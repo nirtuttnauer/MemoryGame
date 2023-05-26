@@ -85,3 +85,8 @@ $(document).ready(function() {
     window.location.href = targetUrl;
   });
 });
+
+$("#startBtn").click(function(){
+  console.log("inside")
+  window.location.href='index.html'
+})
