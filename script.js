@@ -88,7 +88,7 @@ $(document).ready(function() {
 });
 
 $("#startBtn").click(function(){
-  if($("#secondInput").val()==null || $("#firstInput").val()==null )
+  if($("#secondInput").val()=="" || $("#firstInput").val()=="" )
     alert("fill all the fields!")
   else {
     window.location.href = 'index.html'
