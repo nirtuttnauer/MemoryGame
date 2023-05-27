@@ -2,6 +2,7 @@ var symbols = ['♠', '♣', '♥', '♦', '♤', '♧', '♡', '♢']; // Array
 var cards = symbols.concat(symbols); // Duplicate the symbols to create pairs
 var flippedCards = [];
 var matchedCards = [];
+// var name = $("#firstInput")
 
 // Shuffle the cards array
 function shuffle(array) {
@@ -87,6 +88,10 @@ $(document).ready(function() {
 });
 
 $("#startBtn").click(function(){
-  console.log("inside")
-  window.location.href='index.html'
+  if($("#secondInput").val()=="" || $("#firstInput").val()=="" )
+    alert("fill all the fields!")
+  else {
+    window.location.href = 'index.html'
+    alert("hello " + $("#firstInput").val())
+  }
 })
